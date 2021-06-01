@@ -4,3 +4,8 @@ node_modules/
 session.data.json
 debug.log
 logs/
+
+# managed by open-wa
+**.data.json
+**.node-persist**
+# end managed by open-wa

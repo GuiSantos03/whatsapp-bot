@@ -1,8 +1,11 @@
 const wa = require("@open-wa/wa-automate")
 const { decryptMedia } = require("@open-wa/wa-decrypt");
+const GoogleImages = require('google-images')
 const config = require("./config.json")
+const credentials = require("./credentials.json")
 
 const uaOverride = "WhatsApp/2.2029.4 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36";
+const imageSearch = new GoogleImages(credentials.searchEngineId, credentials.apiKey)
 
 wa.create().then(client => start(client))
 
@@ -31,6 +34,22 @@ async function start(client) {
                             console.log(message.from, "Erro", message.id);
                         }
                     }
+                }
+            }
+
+            else if (message.body != undefined && message.body.indexOf(`${config.prefix}pesquisar`) != -1) {
+                try {
+                    console.log(message.body.slice(11))
+                    imageSearch.search(message.body.slice(11))
+                        .then( async image => {
+                            try {
+                                console.log(image[1].description)
+                                await client.sendImage(message.from, `${image[0].url}`, "", `Resultado da pesquisa de *${message.sender.pushname}*: \n\n_${image[1].description}_`)
+                            } catch {
+                                await client.reply(message.from, "Erro", message.id)
+                            }})
+                } catch {
+                    await client.reply(message.from, `Nenhum resultado encontrado para: ${message.body.slice(11)}`, message.id)
                 }
             }
         }

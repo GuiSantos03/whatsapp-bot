@@ -5,11 +5,9 @@
 ## Available Commands
 | Command | Description | Screenshot |
 |------|-------------| --------------|
-| Ping | PING PONG | ![Ping](https://raw.githubusercontent.com/zhycorp/whatsapp-bot/main/assets/images/ping.png) |
-| Sticker | Stickerify a picture | ![Sticker](https://raw.githubusercontent.com/zhycorp/whatsapp-bot/main/assets/images/sticker.png) |
-| Help | Show the bot's commands list | ![Help](https://raw.githubusercontent.com/zhycorp/whatsapp-bot/main/assets/images/help.png) |
-| Math | Calculate something | ![Math](https://raw.githubusercontent.com/zhycorp/whatsapp-bot/main/assets/images/math.png) |
-| Another new thing soon | | |
+| Sticker | Stickerify a picture | ![Sticker](https://snipboard.io/clwDBp.jpg) |
+| Image Search | Search for images on Google | ![Sticker](https://snipboard.io/SVCsdr.jpg) |
+
 
 ## Features
 | Name | Description |
@@ -21,14 +19,14 @@
 1. Open your terminal
 2. Download this repo, or you can just run
 ```sh
-$ git clone https://github.com/zhycorp/whatsapp-bot
+$ git clone https://github.com/GuiSantosDev/whatsapp-bot
 $ cd whatsapp-bot
 ```
 3. Open up the `config.json` file, and fill the required variables
 4. Install all the required dependencies by running, and get the bot online
 ```sh
-$ npm i
-$ node .
+$ npm install
+$ npm start
 ```
 5. It will gives you a QR code which you can scan using your WhatsApp Web account
 6. Your bot is online and ready to use.

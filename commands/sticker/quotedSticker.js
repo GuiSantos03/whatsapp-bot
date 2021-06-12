@@ -10,8 +10,8 @@ module.exports = async function(client, message, now, config) {
 
         else if (message.quotedMsgObj.type === "video/mp4" || message.quotedMsgObj.type === "image/gif" || message.quotedMsgObj.type === "video") {
 
-            if (message.duration >= 15) {
-                return client.reply(message.from, "Tamanho máximo: 15 segundos", message.id)  
+            if (message.quotedMsgObj.duration >= 10) {
+                return client.reply(message.from, "Tamanho máximo: 10 segundos", message.id)  
             }
 
             client.reply(message.from, "_Gerando..._", message.id)

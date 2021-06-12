@@ -8,8 +8,8 @@ module.exports = async function(client, message, now, config) {
     }
 
     async function animatedMediaToSticker(client, message, now) {
-        if (message.duration >= 16) {
-            return client.reply(message.from, "Tamanho máximo: 15 segundos", message.id)  
+        if (message.duration >= 10) {
+            return client.reply(message.from, "Tamanho máximo: 10 segundos", message.id)  
         }
 
         client.reply(message.from, "_Gerando..._", message.id)

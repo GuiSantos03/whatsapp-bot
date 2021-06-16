@@ -22,17 +22,19 @@
     "extends": "@zhycorp/eslint-config/node"
   },
   "dependencies": {
-    "@open-wa/wa-automate": "^4.1.0",
+    "@open-wa/wa-automate": "^4.5.0",
     "@open-wa/wa-decrypt": "^4.0.1",
+    "buffer-type": "^1.0.0",
     "child_process": "^1.0.2",
     "consign": "^0.1.6",
     "fs": "^0.0.1-security",
     "google-images": "^2.1.0",
     "mathjs": "^9.3.2",
-    "node-zhycorp": "^1.5.5"
+    "node-zhycorp": "^1.5.5",
+    "telegraph-uploader": "^2.0.0"
   },
   "devDependencies": {
     "@zhycorp/eslint-config": "^3.0.0",
-    "eslint": "^7.24.0"
+    "eslint": "^7.28.0"
   }
 }

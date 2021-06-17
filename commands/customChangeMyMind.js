@@ -4,7 +4,7 @@ const stringFormatter = require("./libs/stringFormatter.js")
 
 
 module.exports = async (client, message, now, config) => {
-	if (message.body !== undefined && message.body.indexOf(`${config.prefix}cmm`) !== -1) {
+	if (message.body !== undefined && message.body.startsWith(`${config.prefix}cmm`)) {
 		if (message.body.length <= 40) {
 			const meme = await custom(message.body.slice(5).normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
 			client.sendFile(message.from, meme.url, "image.png", "", null, true)

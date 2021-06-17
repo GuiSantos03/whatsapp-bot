@@ -3,7 +3,7 @@ const fetch = require("node-fetch")
 const stringFormatter = require("./libs/stringFormatter.js")
 
 module.exports = async (client, message, now, config) => {
-	if (message.body !== undefined && message.body.indexOf(`${config.prefix}ds`) !== -1) {
+	if (message.body !== undefined && message.body.startsWith(`${config.prefix}ds`)) {
 		const messageTrim = message.body.slice(4).normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 		const filter = /^[\w|\w_ ]||[#||?||%\w#||?||%|#||?||%\w#||?||%]*$/gi
 		if (messageTrim.length <= 40 && messageTrim.match(filter)) { //permitir apenas letras

@@ -10,7 +10,7 @@ const bt = require("buffer-type")
 
 
 module.exports = async (client, message, now, config) => {
-	if(message.body !== undefined && message.body.indexOf(`${config.prefix}meme`) !== -1) {
+	if(message.body !== undefined && message.body.startsWith(`${config.prefix}meme`)) {
 		if((message.isMedia || (message.quotedMsgObj !== null && message.quotedMsgObj.type === "image")) && message.body.length >= 2 ) {
 			const messageTrim = message.body.slice(6).normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 
@@ -58,7 +58,7 @@ function uploadImages(buffData) {
 		} catch {
 			fileExtension = ".jpg"
 		}
-		const filePath = "utils/tmp" + fileExtension
+		const filePath = "temp/tmp" + fileExtension
 
 		fs.writeFile(filePath, buffData, (error) => {
 			if (error) return reject(error)

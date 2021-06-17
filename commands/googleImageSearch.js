@@ -6,7 +6,7 @@ const imageSearch = new GoogleImages(credentials.searchEngineId, credentials.api
 
 
 module.exports = async (client, message, now, config) => {
-	if (message.body != undefined && message.body.indexOf(`${config.prefix}pesquisar`) != -1) {
+	if (message.body !== undefined && message.body.startsWith(`${config.prefix}pesquisar`)) {
 
 		imageSearch.search(message.body.slice(11))
 			.then( async image => {

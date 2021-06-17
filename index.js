@@ -11,10 +11,8 @@ consign
 
 async function start(client) {
 	client.onMessage(async (message) => {
-		const now = Date.now()     
-
+		const now = Date.now()  
 		consign
-			.into(client, message, now, config)		
-
+			.into(client, message, now, config)			
 	})
 }

@@ -1,0 +1,17 @@
+
+*💕💕MENU DE COMANDOS💕💕*
+
+*!sticker*: Transforma imagem/gif/video em sticker
+
+*!meme*: Cria um meme com a imagem mencionada
+_ex_: !meme top text | bottom text
+
+*!cmm*: Cria um change my mind com a imagem mencionada
+_ex_: !cmm text
+    
+*!ds*: Cria um daily struggle com a imagem mencionada
+_ex_: !meme right text | left text | person
+
+*!tts*: Transforma um texto em audio
+_ex_: !tts isso é um audio
+

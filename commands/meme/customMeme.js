@@ -2,7 +2,7 @@
 const { decryptMedia } = require("@open-wa/wa-decrypt")
 const { uploadByBuffer } = require("telegraph-uploader")
 
-const stringFormatter = require("./libs/stringFormatter.js")
+const stringFormatter = require("../libs/stringFormatter")
   
 const fetch = require("node-fetch")
 const fs = require("fs")
@@ -17,7 +17,7 @@ module.exports = async (client, message, now, config) => {
 			const filter = /^[\w|\w_ ]||[#||?||%\w#||?||%|#||?||%\w#||?||%]*$/gi
 
             
-			if(messageTrim.length <= 40 && messageTrim.match(filter)) { //permitir apenas letras
+			if(messageTrim.length <= 50 && messageTrim.match(filter)) {
 				const top = messageTrim.split("|")[0]
 				const bottom = messageTrim.split("|")[1]
 				const encryptMedia = message.quotedMsgObj.type === "image" ? message.quotedMsgObj : message
@@ -62,7 +62,7 @@ function uploadImages(buffData) {
 
 		fs.writeFile(filePath, buffData, (error) => {
 			if (error) return reject(error)
-			console.log("\x1b[33m","Enviando imagem para o servidor telegra.ph...")
+			console.log("\x1b[33m","[DEBUG] Enviando imagem para o servidor telegra.ph...")
 			const fileData = fs.readFileSync(filePath)
 			uploadByBuffer(fileData, "image/jpg")
 				.then((result) => {

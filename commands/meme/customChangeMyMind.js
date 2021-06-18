@@ -1,6 +1,6 @@
 /* eslint-disable no-useless-escape */
 const fetch = require("node-fetch")
-const stringFormatter = require("./libs/stringFormatter.js")
+const stringFormatter = require("../libs/stringFormatter")
 
 
 module.exports = async (client, message, now, config) => {

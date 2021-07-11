@@ -5,7 +5,7 @@ module.exports = async function(client, message, now, config) {
 	if (message.body !== undefined && message.body.startsWith(`${config.prefix}sticker`) && message.quotedMsgObj) {
 		if (message.quotedMsgObj.type === "image") {
 			const media = await decryptMedia(message.quotedMsgObj, config.userAgent)
-			await client.sendImageAsSticker(message.from, `data:image/jpeg;base64,${media.toString("base64")}`, { author: `Solicitado por: ${message.sender.pushname}`, pack: config.packageName })
+			await client.sendImageAsSticker(message.from, `data:image/jpeg;base64,${media.toString("base64")}`, { author: `Solicitado por: ${message.sender.pushname}`, pack: config.packageName, keepScale: true })
 			console.log("\x1b[32m",`[DEBUG] Sticker gerado em ${Date.now() - now}ms`)
 		} 
 

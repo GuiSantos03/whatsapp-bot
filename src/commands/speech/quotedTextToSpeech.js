@@ -2,7 +2,12 @@ const { speech } = require("../libs/speech");
 
 module.exports = async (client, message, now, config) => {
     if (message.body !== undefined && message.quotedMsg && message.body.startsWith(`${config.prefix}tts`)) {
-        speech(client, message, now);
+        if (message.quotedMsg.type === "chat") {
+            speech(client, message, now);
+            return;
+        }
+
+        return client.reply(message.from, "Apenas texto", message.id);
     }
 };
 

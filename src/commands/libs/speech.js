@@ -14,7 +14,7 @@ function speech(client, message, now) {
 
     textToSpeech
         .synthesize({
-            text: isQuoted ? message.quotedMsg.body : message.body,
+            text: isQuoted ? message.quotedMsg.body : message.body.slice(5),
             voice: "pt-BR_IsabelaVoice",
             accept: "audio/wav"
         })

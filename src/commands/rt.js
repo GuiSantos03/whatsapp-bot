@@ -8,6 +8,6 @@
 // 			console.log(i)
 // 			console.log(message.quotedMsgObj.content)
 // 			await client.sendText(message.from, message.quotedMsgObj.content)
-// 		}      
+// 		}
 // 	}
 // }

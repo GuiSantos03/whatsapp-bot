@@ -18,15 +18,16 @@ function tweetsFeijoada(client) {
     t.on("tweet", async tweet => {
         const now = Date.now();
         const hourUTC = new Date().getUTCHours();
-        if (tweet.user.id_str === feijoadaID && hourUTC >= 11 && hourUTC <= 3) {
+        console.log(hourUTC);
+        if (tweet.user.id_str === feijoadaID && hourUTC >= 10) {
             try {
-                await client.sendImage(faccinlandiaID, tweet.entities.media[0].media_url, "", "Nova publicação de @FeijoadaSim");
+                await client.sendImage(faccinlandiaID, tweet.entities.media[0].media_url);
                 console.log("\x1b[32m", `[LOG] Post enviado em: ${Date.now() - now}ms`);
             } catch (error) {
                 console.log(
                     "\x1b[31m",
                     error.message.includes("Cannot read property '0' of undefined")
-                        ? "[LOG] Este Tweet não contém uma imagem"
+                        ? "" // If tweet does not contain an image
                         : error.message
                 );
             }

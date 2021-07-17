@@ -1,5 +1,6 @@
 const wa = require("@open-wa/wa-automate");
 const Consign = require("consign");
+const tweetsFeijoada = require("./commands/libs/tweetsFeijoada");
 const config = require("./config.json");
 
 module.exports = function run() {
@@ -16,5 +17,7 @@ module.exports = function run() {
             const now = Date.now();
             consign.into(client, message, now, config);
         });
+
+        tweetsFeijoada(client);
     }
 };

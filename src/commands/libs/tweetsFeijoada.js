@@ -12,6 +12,7 @@ function tweetsFeijoada(client) {
 
     const feijoadaID = "1028353328806285312";
     const faccinlandiaID = "553196114580-1583521340@g.us";
+    const disabledTimes = [4, 5, 6, 7, 8, 9, 10];
 
     t.follow(feijoadaID);
 
@@ -19,7 +20,7 @@ function tweetsFeijoada(client) {
         const now = Date.now();
         const hourUTC = new Date().getUTCHours();
         console.log(hourUTC);
-        if (tweet.user.id_str === feijoadaID && hourUTC >= 10) {
+        if (tweet.user.id_str === feijoadaID && !disabledTimes.includes(hourUTC)) {
             try {
                 await client.sendImage(faccinlandiaID, tweet.entities.media[0].media_url);
                 console.log("\x1b[32m", `[LOG] Post enviado em: ${Date.now() - now}ms`);

@@ -24,7 +24,7 @@
   "dependencies": {
     "@open-wa/wa-automate": "^4.12.1",
     "@open-wa/wa-decrypt": "^4.0.1",
-    "aws-sdk": "^2.947.0",
+    "aws-sdk": "^2.953.0",
     "buffer-type": "^1.0.0",
     "child_process": "^1.0.2",
     "consign": "^0.1.6",

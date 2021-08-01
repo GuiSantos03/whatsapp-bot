@@ -4,7 +4,7 @@ const { IamAuthenticator } = require("ibm-watson/auth");
 const credentials = require("../../credentials.json");
 
 function speech(client, message, now) {
-    if (message.body.length <= 2000) {
+    if (message.body.length <= 1000) {
         const textToSpeech = new TextToSpeechV1({
             authenticator: new IamAuthenticator({ apikey: credentials.textToSpeech }),
             serviceUrl: credentials.ibmServiceUrl

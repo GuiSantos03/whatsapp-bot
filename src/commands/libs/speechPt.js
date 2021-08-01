@@ -3,7 +3,7 @@ const Fs = require("fs");
 const credentials = require("../../credentials.json");
 
 function speechPt(client, message, now) {
-    if (message.body.length <= 2000) {
+    if (message.body.length <= 1000) {
         const creds = new AWS.Credentials(
             credentials.accessKeyId,
             credentials.secretAccessKey

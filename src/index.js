@@ -15,7 +15,7 @@ module.exports = function run() {
 
     async function start(client) {
         client.onMessage(async message => {
-            if (message.body.startsWith(`${config.prefix}`) && isFiltered(message.sender.id)) {
+            if (message.body !== undefined && message.body.startsWith(`${config.prefix}`) && isFiltered(message.sender.id)) {
                 addFilter(message.sender.id);
                 const now = Date.now();
                 consign.into(client, message, now, config);

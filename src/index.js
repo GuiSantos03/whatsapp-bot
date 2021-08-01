@@ -20,7 +20,7 @@ module.exports = function run() {
                 const now = Date.now();
                 consign.into(client, message, now, config);
             } else {
-                client.reply(message.from, "spam", message.id);
+                console.log("\x1b[31m", "[LOG] SPAM");
             }
         });
 

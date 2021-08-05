@@ -2,7 +2,7 @@ const { decryptMedia } = require("@open-wa/wa-decrypt");
 const sendAnimatedSticker = require("../libs/sendAnimatedSticker");
 
 module.exports = async (client, message, now, config) => {
-    if (message.body !== undefined && message.body.startsWith(`${config.prefix}sticker`) && message.quotedMsgObj) {
+    if (message.body.startsWith(`${config.prefix}sticker`) && message.quotedMsgObj) {
         if (message.quotedMsgObj.type === "image") {
             const media = await decryptMedia(message.quotedMsgObj, config.userAgent);
             await client.sendImageAsSticker(message.from, `data:image/jpeg;base64,${media.toString("base64")}`, { author: `Solicitado por: ${message.sender.pushname}`, pack: config.packageName, keepScale: true });

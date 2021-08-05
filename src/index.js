@@ -15,12 +15,12 @@ module.exports = function run() {
 
     async function start(client) {
         client.onMessage(async message => {
-            const isCmd = message.body.startsWith(`${config.prefix}`);
-            if (message.body !== undefined && isCmd && isFiltered(message.sender.id)) {
+            const isCmd = message.body !== undefined && message.body.startsWith(`${config.prefix}`);
+            if (isCmd && isFiltered(message.sender.id)) {
                 addFilter(message.sender.id);
                 const now = Date.now();
                 consign.into(client, message, now, config);
-            } else if (message.body !== undefined && isCmd && !isFiltered(message.sender.id)) {
+            } else if (isCmd && !isFiltered(message.sender.id)) {
                 console.log("\x1b[31m", "[LOG] SPAM");
             }
         });

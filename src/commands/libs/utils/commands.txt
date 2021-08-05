@@ -1,5 +1,5 @@
 
-*💕💕MENU DE COMANDOS💕💕*
+*👀 MENU DE COMANDOS 👀*
 
 *!sticker*: Transforma imagem/gif/video em sticker
 
@@ -15,3 +15,5 @@ _ex_: !meme right text | left text | person
 *!tts*: Transforma um texto em audio
 _ex_: !tts isso é um audio
 
+*!ptts*: Transforma um texto em audio com sotaque português
+_ex_: !ptts isso é um audio

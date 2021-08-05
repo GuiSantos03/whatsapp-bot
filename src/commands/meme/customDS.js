@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const stringFormatter = require("../libs/stringFormatter");
 
 module.exports = async (client, message, now, config) => {
-    if (message.body !== undefined && message.body.startsWith(`${config.prefix}ds`)) {
+    if (message.body.startsWith(`${config.prefix}ds`)) {
         const messageTrim = message.body.slice(4).normalize("NFD").replace(/[\u0300-\u036f]/g, "");
         const filter = /^[\w|\w_ ]||[#||?||%\w#||?||%|#||?||%\w#||?||%]*$/gi;
 

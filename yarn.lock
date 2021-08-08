@@ -108,14 +108,15 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@open-wa/wa-automate@^4.12.3":
-  version "4.12.3"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.12.3.tgz#af933398f51c0f9cecdb028b2554ffe4aff86ccd"
-  integrity sha512-xNe5DV0xV51slaEysboqwdzXBMKublOi4hnOH6BeGtnoay/R7cD8q4lqtexu+u6QhG+64D7Xt8zDgg4PnuoXGQ==
+"@open-wa/wa-automate@^4.14.0":
+  version "4.14.0"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.14.0.tgz#6308b072c2db9ce834403c4894a83ffbf8b1e052"
+  integrity sha512-RoL7iohZuJTYyAXgC4jRuqvgm07XcaEFSpJJpp4Npq/bHWpVZerdClfcdmz3tw+VAUlHXRktvwrrO1OVXn4GYw==
   dependencies:
     "@discordjs/collection" "^0.2.0"
-    "@open-wa/wa-decrypt" "^4.0.1"
+    "@open-wa/wa-decrypt" "^4.2.0"
     atob "^2.1.2"
+    aws4 "^1.11.0"
     axios "^0.21.0"
     boxen "^5.0.0"
     cfonts "^2.8.5"
@@ -149,7 +150,7 @@
     patch-package "^6.2.2"
     pino "^6.11.1"
     postman-2-swagger "^0.5.0"
-    puppeteer "10.1.0"
+    puppeteer "10.2.0"
     puppeteer-extra "^3.1.9"
     puppeteer-extra-plugin-block-resources "^2.2.7"
     puppeteer-extra-plugin-devtools "^2.2.8"
@@ -173,10 +174,10 @@
     uuid "^8.3.2"
     uuid-apikey "^1.4.6"
 
-"@open-wa/wa-decrypt@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.0.1.tgz#275dad01f273a33e80760c2cb410197d86c9083d"
-  integrity sha512-km7iiFv2mHHPb2CtX6NcXPrJRFmbuvOL/Hpw8exLZqkqKON4H2PtrmKFAfV3MfA8dKlHwj4hTVwn5EheqPBFIA==
+"@open-wa/wa-decrypt@^4.0.1", "@open-wa/wa-decrypt@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.2.0.tgz#aea2f46037cc0f4a32b0e2ba025466740eeeddc5"
+  integrity sha512-k8pT6HUQmaAVD2DffXdVoeSYTs1z4baK0V0r/aZTXtDKc4JTRcaxwnGVNAPiyLeqBLPy9OUDvXDHJakeqmcsSQ==
   dependencies:
     atob "^2.1.2"
     axios "^0.21.1"
@@ -608,7 +609,7 @@ aws-sign2@~0.7.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
-aws4@^1.8.0:
+aws4@^1.11.0, aws4@^1.8.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
@@ -1387,10 +1388,10 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
-devtools-protocol@0.0.883894:
-  version "0.0.883894"
-  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.883894.tgz#d403f2c75cd6d71c916aee8dde9258da988a4da9"
-  integrity sha512-33idhm54QJzf3Q7QofMgCvIVSd2o9H3kQPWaKT/fhoZh+digc+WSiMhbkeG3iN79WY4Hwr9G05NpbhEVrsOYAg==
+devtools-protocol@0.0.901419:
+  version "0.0.901419"
+  resolved "https://registry.yarnpkg.com/devtools-protocol/-/devtools-protocol-0.0.901419.tgz#79b5459c48fe7e1c5563c02bd72f8fec3e0cebcd"
+  integrity sha512-4INMPwNm9XRpBukhNbF7OB6fNTTCaI8pzy/fXg0xQzAy5h3zL1P8xT3QazgKqBrb/hAYwIBizqDBZ7GtJE74QQ==
 
 diff-sequences@^26.6.2:
   version "26.6.2"
@@ -4374,13 +4375,13 @@ puppeteer-page-proxy@^1.2.8:
     socks-proxy-agent "^5.0.0"
     tough-cookie "^4.0.0"
 
-puppeteer@10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-10.1.0.tgz#6ee1d7e30401a967f4403bd42ace9e51e399504f"
-  integrity sha512-bsyDHbFBvbofZ63xqF7hMhuKBX1h4WsqFIAoh1GuHr/Y9cewh+EFNAOdqWSkQRHLiBU/MY6M+8PUnXXjAPtuSg==
+puppeteer@10.2.0:
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/puppeteer/-/puppeteer-10.2.0.tgz#7d8d7fda91e19a7cfd56986e0275448e6351849e"
+  integrity sha512-OR2CCHRashF+f30+LBOtAjK6sNtz2HEyTr5FqAvhf8lR/qB3uBRoIZOwQKgwoyZnMBsxX7ZdazlyBgGjpnkiMw==
   dependencies:
     debug "4.3.1"
-    devtools-protocol "0.0.883894"
+    devtools-protocol "0.0.901419"
     extract-zip "2.0.1"
     https-proxy-agent "5.0.0"
     node-fetch "2.6.1"

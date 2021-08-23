@@ -4,18 +4,23 @@ const tweetsFeijoada = require("./commands/libs/tweetsFeijoada");
 const config = require("./config.json");
 const { isFiltered, addFilter } = require("./commands/libs/antiSpam");
 
+const Table = require("./database/createTable");
+const connection = require("./database/connection");
+
 module.exports = function run() {
     wa.create().then(client => start(client));
 
+    new Table(connection);
+
     const consign = Consign();
 
-    consign
-        .include("./src/commands")
-        .exclude("./src/commands/libs");
+    consign.include("./src/commands").exclude("./src/commands/libs");
 
     async function start(client) {
         client.onMessage(async message => {
-            const isCmd = message.body !== undefined && message.body.startsWith(`${config.prefix}`);
+            const isCmd =
+                message.body !== undefined &&
+                message.body.startsWith(`${config.prefix}`);
             if (isCmd && isFiltered(message.sender.id)) {
                 addFilter(message.sender.id);
                 const now = Date.now();

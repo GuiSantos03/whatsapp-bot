@@ -108,10 +108,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@open-wa/wa-automate@^4.17.1":
-  version "4.17.1"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.17.1.tgz#684834ac33e70844953ae34e09510a871c67834e"
-  integrity sha512-sypC5rFFXSRUOQhWqCYpd/01fE2/puJAsjwu1NrpoqaTREKCMJ5iuX7hOoD0aZsr5jNihk5C/VF6lS0gIq76PA==
+"@open-wa/wa-automate@^4.17.2":
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.17.2.tgz#12988188fd7fd3bb0b64df031dcc22bbde52aa5f"
+  integrity sha512-P8QIg+y6WZexO0IhynTHiQ3hroomK5qAKdEdPiRBPOI50uhCnYl6S1Knw5bpOiDPbIysslBzEwjm9LHfIUWPeA==
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.2.0"
@@ -175,16 +175,7 @@
     uuid "^8.3.2"
     uuid-apikey "^1.4.6"
 
-"@open-wa/wa-decrypt@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.0.1.tgz#275dad01f273a33e80760c2cb410197d86c9083d"
-  integrity sha512-km7iiFv2mHHPb2CtX6NcXPrJRFmbuvOL/Hpw8exLZqkqKON4H2PtrmKFAfV3MfA8dKlHwj4hTVwn5EheqPBFIA==
-  dependencies:
-    atob "^2.1.2"
-    axios "^0.21.1"
-    futoin-hkdf "^1.3.3"
-
-"@open-wa/wa-decrypt@^4.2.0":
+"@open-wa/wa-decrypt@^4.0.1", "@open-wa/wa-decrypt@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.2.0.tgz#aea2f46037cc0f4a32b0e2ba025466740eeeddc5"
   integrity sha512-k8pT6HUQmaAVD2DffXdVoeSYTs1z4baK0V0r/aZTXtDKc4JTRcaxwnGVNAPiyLeqBLPy9OUDvXDHJakeqmcsSQ==

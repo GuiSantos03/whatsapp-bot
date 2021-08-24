@@ -1,5 +1,4 @@
 const LastFm = require("lastfm-node-client");
-const connection = require("../../database/connection");
 const LastfmRepo = require("../../repositories/lastfm");
 
 module.exports = async (client, message, now, config) => {

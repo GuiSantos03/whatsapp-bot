@@ -1,6 +1,7 @@
-const mysql = require("mysql");
+const { createPool } = require("mysql");
 
-const connection = new mysql.createConnection({
+const connection = createPool({
+    connectionLimit: 15,
     user: "",
     host: "",
     database: "",
@@ -8,4 +9,6 @@ const connection = new mysql.createConnection({
     port: 3306
 });
 
-module.exports = connection;
+module.exports = {
+    connection
+};

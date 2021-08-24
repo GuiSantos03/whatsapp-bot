@@ -5,7 +5,9 @@ const config = require("./config.json");
 const { isFiltered, addFilter } = require("./commands/libs/antiSpam");
 
 const Table = require("./database/createTable");
-const connection = require("./database/connection");
+
+const { connection } = require("./database/connection");
+
 
 module.exports = function run() {
     wa.create().then(client => start(client));

@@ -2618,10 +2618,10 @@ ibm-cloud-sdk-core@^2.10.3:
     semver "^6.2.0"
     tough-cookie "^4.0.0"
 
-ibm-watson@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.1.1.tgz#5e4de0a343501b4a638f47a05043f336de605765"
-  integrity sha512-2gz44DB3XFg6d7n49/7h/B/az0Vjmwv35xubCJ0WhuY1SfsdZifIoDwQg2g2NM89fuUmwJ0ZrKcu57aY84aq0Q==
+ibm-watson@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.1.2.tgz#719c48cf021c287c15d2b53b6fe621fb4a90b0ce"
+  integrity sha512-mMAHOCVkkOgMP20A5wkE9K3R48qqzsVCQ9leOHLHEIGLy5usiT9Og7MwNoLmHOSyTUo1uD9pPdMeSTAAW8Eqbw==
   dependencies:
     "@types/async" "^3.2.5"
     "@types/extend" "^3.0.1"

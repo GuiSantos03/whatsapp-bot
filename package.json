@@ -30,7 +30,7 @@
     "consign": "^0.1.6",
     "fs": "^0.0.1-security",
     "google-images": "^2.1.0",
-    "ibm-watson": "^6.1.1",
+    "ibm-watson": "^6.1.2",
     "lastfm-node-client": "^2.2.0",
     "mathjs": "^9.3.2",
     "mysql": "^2.18.1",

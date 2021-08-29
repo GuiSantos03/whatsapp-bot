@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "@open-wa/wa-automate": "^4.20.1",
-    "@open-wa/wa-decrypt": "^4.0.1",
     "aws-sdk": "^2.978.0",
+    "@open-wa/wa-decrypt": "^4.2.1",
     "buffer-type": "^1.0.0",
     "child_process": "^1.0.2",
     "consign": "^0.1.6",
@@ -40,7 +40,7 @@
     "telegraph-uploader": "^2.0.0"
   },
   "devDependencies": {
-    "@zhycorp/eslint-config": "^3.1.0",
+    "@zhycorp/eslint-config": "^4.0.0",
     "eslint": "^7.32.0"
   }
 }

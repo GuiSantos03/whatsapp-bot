@@ -175,14 +175,15 @@
     uuid "^8.3.2"
     uuid-apikey "^1.4.6"
 
-"@open-wa/wa-decrypt@^4.0.1", "@open-wa/wa-decrypt@^4.2.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.2.0.tgz#aea2f46037cc0f4a32b0e2ba025466740eeeddc5"
-  integrity sha512-k8pT6HUQmaAVD2DffXdVoeSYTs1z4baK0V0r/aZTXtDKc4JTRcaxwnGVNAPiyLeqBLPy9OUDvXDHJakeqmcsSQ==
+"@open-wa/wa-decrypt@^4.2.0", "@open-wa/wa-decrypt@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.2.1.tgz#6d05622c7bb07effeb00af95c78db43a51f448e8"
+  integrity sha512-v01EQSyKIYYKOP04eCJ46l8pviG75tHq5JjpwyK9zqyfcmbAaHWi0ry78uTfKy6umKs0wCtFITAHXU/htr4MJg==
   dependencies:
     atob "^2.1.2"
     axios "^0.21.1"
     futoin-hkdf "^1.3.3"
+    type-fest "^2.1.0"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -396,10 +397,10 @@
   resolved "https://registry.yarnpkg.com/@yarnpkg/lockfile/-/lockfile-1.1.0.tgz#e77a97fbd345b76d83245edcd17d393b1b41fb31"
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
-"@zhycorp/eslint-config@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@zhycorp/eslint-config/-/eslint-config-3.1.0.tgz#d142ef57d4e16b28a8a6dad5d23848524b10fbd3"
-  integrity sha512-nG2S09tFtTY6E2zQN6TK6+L125qLSa9sLJ9dAT5SXzFktDTcY1TIxzFfyh0rA5lPb4nl8Z2lVmIUTjLRWZ5LLA==
+"@zhycorp/eslint-config@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@zhycorp/eslint-config/-/eslint-config-4.0.0.tgz#a2c4def22a61a7b66695e1e9d34a9aa3dae91fc4"
+  integrity sha512-RfEuDCbfeEEGtvUoAWF3ov3jvABsbF/yY1f2DFdqxjJJ66UCLpxKEQfmZN0A5rjXZ9bK0L4dRefawz9y+RU5Mw==
 
 accepts@~1.3.4, accepts@~1.3.7:
   version "1.3.7"
@@ -5498,6 +5499,11 @@ type-fest@^1.1.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-1.2.2.tgz#1930bc36b2064f7ab4aa307a6d1b65965199c698"
   integrity sha512-pfkPYCcuV0TJoo/jlsUeWNV8rk7uMU6ocnYNvca1Vu+pyKi8Rl8Zo2scPt9O72gCsXIm+dMxOOWuA3VFDSdzWA==
+
+type-fest@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-2.1.0.tgz#1f8b20ff51519f3b01b3188d50dea9f9ebfbf1b8"
+  integrity sha512-2wHUmKDy5wNLmebekbHx/zE9ElYAKOmz34psTLG7OwyEJHaIUr6jnaCd55EvgrawAvliwbwgbyH1LkxIfWFyNg==
 
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"

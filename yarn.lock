@@ -117,6 +117,7 @@
   version "4.20.6"
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.20.6.tgz#90e95d23b3bdd229e5b82ece8fba04686288b537"
   integrity sha512-l3aBl3DnPFgLWcRjbUVpEWnDhw1bvR0qi26oCbjRucAKOjNGZuhDAzS42l1WDI99VVMMvIKEi91y0ant3op7Ag==
+
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.3.1"
@@ -180,7 +181,9 @@
     uuid "^8.3.2"
     uuid-apikey "^1.4.6"
 
+
 "@open-wa/wa-decrypt@^4.2.1", "@open-wa/wa-decrypt@^4.3.1":
+
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.3.1.tgz#5f936111f9f7e1e58f196769f30db003c92102e2"
   integrity sha512-47CYPdqtVXNbaCKapURipwx9O1kqk5EPmGwY6Xh45gOUn51Sr7ahqD0/MU0ThnZmT3KqZuwc8ciRIGBBBbDsqg==

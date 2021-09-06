@@ -27,6 +27,7 @@ module.exports = function run() {
                 addFilter(message.sender.id);
                 const now = Date.now();
                 consign.into(client, message, now, config);
+                cutCache(client);
             } else if (isCmd && !isFiltered(message.sender.id)) {
                 console.log("\x1b[31m", "[LOG] SPAM");
             }
@@ -35,3 +36,15 @@ module.exports = function run() {
         tweetsFeijoada(client);
     }
 };
+
+
+async function cutCache(client) {
+    const msgsCount = await client.getAmountOfLoadedMessages();
+
+    if (msgsCount >= 4000) {
+        console.log(` [LOG] ${msgsCount} messages in cache`);
+        const cut = await client.cutChatCache();
+        console.log(" [LOG] cache wiped");
+        console.log(cut);
+    }
+}

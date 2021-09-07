@@ -113,11 +113,10 @@
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate-types-only/-/wa-automate-types-only-4.20.6.tgz#022debbfe5766d7682431c320bd27d154037b068"
   integrity sha512-gknxGzpoz+W7+u/PFWa2AF55zXe9HnaYrqsiT8QvEl3gjXBZ0eTfN8I+giVGVp+0wYRqu373z7jf2gmF24f28g==
 
-"@open-wa/wa-automate@^4.20.6":
+"@open-wa/wa-automate@^4.20.4":
   version "4.20.6"
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.20.6.tgz#90e95d23b3bdd229e5b82ece8fba04686288b537"
   integrity sha512-l3aBl3DnPFgLWcRjbUVpEWnDhw1bvR0qi26oCbjRucAKOjNGZuhDAzS42l1WDI99VVMMvIKEi91y0ant3op7Ag==
-
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.3.1"
@@ -181,9 +180,7 @@
     uuid "^8.3.2"
     uuid-apikey "^1.4.6"
 
-
-"@open-wa/wa-decrypt@^4.2.1", "@open-wa/wa-decrypt@^4.3.1":
-
+"@open-wa/wa-decrypt@^4.3.1":
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/@open-wa/wa-decrypt/-/wa-decrypt-4.3.1.tgz#5f936111f9f7e1e58f196769f30db003c92102e2"
   integrity sha512-47CYPdqtVXNbaCKapURipwx9O1kqk5EPmGwY6Xh45gOUn51Sr7ahqD0/MU0ThnZmT3KqZuwc8ciRIGBBBbDsqg==
@@ -600,10 +597,10 @@ atomic-sleep@^1.0.0:
   resolved "https://registry.yarnpkg.com/atomic-sleep/-/atomic-sleep-1.0.0.tgz#eb85b77a601fc932cfe432c5acd364a9e2c9075b"
   integrity sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ==
 
-aws-sdk@^2.983.0:
-  version "2.983.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.983.0.tgz#4c6d98d802b2cf159acbc105979b892b427b5fb3"
-  integrity sha512-i4QMJt5hEYzhoDzmbo0v+aAuHQPXM6ah15GBKObbxwYxmzK9wjMG+FH3DiWZZHdFsf3C+p1zDg4rIr63jmOeBw==
+aws-sdk@^2.984.0:
+  version "2.984.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.984.0.tgz#fee0e73d63826a413cc7053c5daeb518d3261561"
+  integrity sha512-wFwNKhlO03V7UnpIge2qT/gYOMvGUlmVuFgF2gQRIkt6lWYvnf8/QDTCKZLhGBpC8/mml10m0CM3khMNwU1KVQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"

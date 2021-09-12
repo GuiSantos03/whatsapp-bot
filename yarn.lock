@@ -108,15 +108,44 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@oozcitak/dom@1.15.10":
+  version "1.15.10"
+  resolved "https://registry.yarnpkg.com/@oozcitak/dom/-/dom-1.15.10.tgz#dca7289f2b292cff2a901ea4fbbcc0a1ab0b05c2"
+  integrity sha512-0JT29/LaxVgRcGKvHmSrUTEvZ8BXvZhGl2LASRUgHqDTC1M5g1pLmVv56IYNyt3bG2CUjDkc67wnyZC14pbQrQ==
+  dependencies:
+    "@oozcitak/infra" "1.0.8"
+    "@oozcitak/url" "1.0.4"
+    "@oozcitak/util" "8.3.8"
+
+"@oozcitak/infra@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@oozcitak/infra/-/infra-1.0.8.tgz#b0b089421f7d0f6878687608301fbaba837a7d17"
+  integrity sha512-JRAUc9VR6IGHOL7OGF+yrvs0LO8SlqGnPAMqyzOuFZPSZSXI7Xf2O9+awQPSMXgIWGtgUf/dA6Hs6X6ySEaWTg==
+  dependencies:
+    "@oozcitak/util" "8.3.8"
+
+"@oozcitak/url@1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@oozcitak/url/-/url-1.0.4.tgz#ca8b1c876319cf5a648dfa1123600a6aa5cda6ba"
+  integrity sha512-kDcD8y+y3FCSOvnBI6HJgl00viO/nGbQoCINmQ0h98OhnGITrWR3bOGfwYCthgcrV8AnTJz8MzslTQbC3SOAmw==
+  dependencies:
+    "@oozcitak/infra" "1.0.8"
+    "@oozcitak/util" "8.3.8"
+
+"@oozcitak/util@8.3.8":
+  version "8.3.8"
+  resolved "https://registry.yarnpkg.com/@oozcitak/util/-/util-8.3.8.tgz#10f65fe1891fd8cde4957360835e78fd1936bfdd"
+  integrity sha512-T8TbSnGsxo6TDBJx/Sgv/BlVJL3tshxZP7Aq5R1mSnM5OcHY2dQaxLMu2+E8u3gN0MLOzdjurqN4ZRVuzQycOQ==
+
 "@open-wa/wa-automate-types-only@*":
   version "4.20.6"
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate-types-only/-/wa-automate-types-only-4.20.6.tgz#022debbfe5766d7682431c320bd27d154037b068"
   integrity sha512-gknxGzpoz+W7+u/PFWa2AF55zXe9HnaYrqsiT8QvEl3gjXBZ0eTfN8I+giVGVp+0wYRqu373z7jf2gmF24f28g==
 
-"@open-wa/wa-automate@^4.20.4":
-  version "4.20.6"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.20.6.tgz#90e95d23b3bdd229e5b82ece8fba04686288b537"
-  integrity sha512-l3aBl3DnPFgLWcRjbUVpEWnDhw1bvR0qi26oCbjRucAKOjNGZuhDAzS42l1WDI99VVMMvIKEi91y0ant3op7Ag==
+"@open-wa/wa-automate@^4.20.8":
+  version "4.20.8"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.20.8.tgz#69f2dc742523562a60fb888ef74a90b82d698bab"
+  integrity sha512-PYOF4ESvckPHOJoP9IvsET7hD+2bD5upJszvOUPQZ9DFXM3skQDIaD/+QgDWAXxK8DV2D5COSKYO++T2h6z/eA==
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.3.1"
@@ -163,6 +192,7 @@
     puppeteer-extra-plugin-stealth "^2.4.9"
     puppeteer-page-proxy "^1.2.8"
     qrcode-terminal "^0.12.0"
+    qs "^6.10.1"
     rxjs "^7.0.0"
     socket.io "^4.0.1"
     socket.io-client "^4.1.1"
@@ -179,6 +209,7 @@
     update-notifier "^5.0.0"
     uuid "^8.3.2"
     uuid-apikey "^1.4.6"
+    xmlbuilder2 "^3.0.2"
 
 "@open-wa/wa-decrypt@^4.3.1":
   version "4.3.1"
@@ -3048,6 +3079,14 @@ js-tokens@^4.0.0:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
+js-yaml@3.14.0:
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
+  integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^4.0.0"
+
 js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.14.1.tgz#dae812fdb3825fa306609a8717383c50c36a0537"
@@ -5843,6 +5882,17 @@ xml2js@0.4.19:
   dependencies:
     sax ">=0.6.0"
     xmlbuilder "~9.0.1"
+
+xmlbuilder2@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/xmlbuilder2/-/xmlbuilder2-3.0.2.tgz#fc499688b35a916f269e7b459c2fa02bb5c0822a"
+  integrity sha512-h4MUawGY21CTdhV4xm3DG9dgsqyhDkZvVJBx88beqX8wJs3VgyGQgAn5VreHuae6unTQxh115aMK5InCVmOIKw==
+  dependencies:
+    "@oozcitak/dom" "1.15.10"
+    "@oozcitak/infra" "1.0.8"
+    "@oozcitak/util" "8.3.8"
+    "@types/node" "*"
+    js-yaml "3.14.0"
 
 xmlbuilder@~9.0.1:
   version "9.0.7"

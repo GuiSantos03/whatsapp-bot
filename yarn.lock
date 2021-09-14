@@ -637,6 +637,13 @@ axios@0.21.1, axios@^0.21.0, axios@^0.21.1:
   dependencies:
     follow-redirects "^1.10.0"
 
+axios@^0.21.4:
+  version "0.21.4"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
+  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+  dependencies:
+    follow-redirects "^1.14.0"
+
 backo2@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/backo2/-/backo2-1.0.2.tgz#31ab1ac8b129363463e35b3ebb69f4dfcfba7947"
@@ -2074,6 +2081,11 @@ follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
   integrity sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==
 
+follow-redirects@^1.14.0:
+  version "1.14.4"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.4.tgz#838fdf48a8bbdd79e52ee51fb1c94e3ed98b9379"
+  integrity sha512-zwGkiSXC1MUJG/qmeIFH2HBJx9u0V46QGUe3YR1fXG8bXQxq7fLj0RjLZQ5nubr9qNJUZrH+xUcwXEoXNpfS+g==
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -2598,16 +2610,16 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-ibm-cloud-sdk-core@^2.10.3:
-  version "2.11.3"
-  resolved "https://registry.yarnpkg.com/ibm-cloud-sdk-core/-/ibm-cloud-sdk-core-2.11.3.tgz#fe0085a8999650bba3d98b66bd6bed38b96a3df3"
-  integrity sha512-Ci29mQLZuFmO1305zT8MH0Frd5PoUxfD0o5bna2lhf6WIEpETMXmr6fsmsd1k/Gj2dxJ2icYxMf99q4jSuTsgA==
+ibm-cloud-sdk-core@^2.14.3:
+  version "2.14.3"
+  resolved "https://registry.yarnpkg.com/ibm-cloud-sdk-core/-/ibm-cloud-sdk-core-2.14.3.tgz#d72acecd7cd3e17d75ad73e0a12b6e478a7155c0"
+  integrity sha512-DVcmK9My2WXhem9JoCsREOuVfWrvHD1JVRzafHzhIDSB82SD3NcdsxhKDKcuHIkxTbOzTxsC8h7WhnnScQvcOw==
   dependencies:
     "@types/file-type" "~5.2.1"
     "@types/isstream" "^0.1.0"
     "@types/node" "~10.14.19"
     "@types/tough-cookie" "^4.0.0"
-    axios "^0.21.1"
+    axios "^0.21.4"
     axios-cookiejar-support "^1.0.0"
     camelcase "^5.3.1"
     debug "^4.1.1"
@@ -2622,13 +2634,14 @@ ibm-cloud-sdk-core@^2.10.3:
     mime-types "~2.1.18"
     object.omit "~3.0.0"
     object.pick "~1.3.0"
+    retry-axios "^2.6.0"
     semver "^6.2.0"
     tough-cookie "^4.0.0"
 
-ibm-watson@^6.1.2:
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.1.2.tgz#719c48cf021c287c15d2b53b6fe621fb4a90b0ce"
-  integrity sha512-mMAHOCVkkOgMP20A5wkE9K3R48qqzsVCQ9leOHLHEIGLy5usiT9Og7MwNoLmHOSyTUo1uD9pPdMeSTAAW8Eqbw==
+ibm-watson@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.2.0.tgz#4c032b26b5d72c2beecd309421ceb72474daafef"
+  integrity sha512-PQ1FoUeud81UNF5e95uSbKT6wfyyjZW8wrg3eEj9BO4uvW1OhLJwzTFobrZYAhRkK+zKmSpivDex6liHUMM/JQ==
   dependencies:
     "@types/async" "^3.2.5"
     "@types/extend" "^3.0.1"
@@ -2638,7 +2651,7 @@ ibm-watson@^6.1.2:
     async "^3.2.0"
     camelcase "^6.2.0"
     extend "~3.0.2"
-    ibm-cloud-sdk-core "^2.10.3"
+    ibm-cloud-sdk-core "^2.14.3"
     isstream "~0.1.2"
     websocket "^1.0.33"
 
@@ -4710,6 +4723,11 @@ restore-cursor@^3.1.0:
   dependencies:
     onetime "^5.1.0"
     signal-exit "^3.0.2"
+
+retry-axios@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/retry-axios/-/retry-axios-2.6.0.tgz#d4dc5c8a8e73982e26a705e46a33df99a28723e0"
+  integrity sha512-pOLi+Gdll3JekwuFjXO3fTq+L9lzMQGcSq7M5gIjExcl3Gu1hd4XXuf5o3+LuSBsaULQH7DiNbsqPd1chVpQGQ==
 
 reusify@^1.0.4:
   version "1.0.4"

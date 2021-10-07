@@ -5,6 +5,8 @@ module.exports = async (client, message, now, config) => {
     if (message.body.startsWith(`${config.prefix}set`)) {
         const lastfmUsername = await LastfmRepo.searchById(message.sender.id);
 
+        const handleUsername = message.body.slice(5);
+
         if (lastfmUsername) {
             client.reply(
                 message.from,
@@ -14,18 +16,20 @@ module.exports = async (client, message, now, config) => {
             return;
         }
 
-        if (message.body.slice(5) === "") {
+        if (handleUsername === "") {
             client.reply(message.from, "Digite um username válido", message.id);
             return;
         }
 
         const user = {
             userId: message.sender.id,
-            lastfmUsername: message.body.slice(5)
+            lastfmUsername: handleUsername
         };
 
         const userRegistered = await LastfmRepo.addUser(user);
 
-        client.reply(message.from, `${userRegistered.lastfmUsername} registrado com sucesso!`, message.id);
+        if (userRegistered) {
+            client.reply(message.from, `${handleUsername} registrado com sucesso!`, message.id);
+        }
     }
 };

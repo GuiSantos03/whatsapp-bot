@@ -156,10 +156,10 @@
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate-types-only/-/wa-automate-types-only-4.20.6.tgz#022debbfe5766d7682431c320bd27d154037b068"
   integrity sha512-gknxGzpoz+W7+u/PFWa2AF55zXe9HnaYrqsiT8QvEl3gjXBZ0eTfN8I+giVGVp+0wYRqu373z7jf2gmF24f28g==
 
-"@open-wa/wa-automate@^4.27.4":
-  version "4.27.4"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.27.4.tgz#77d037951e71c483b2a71c6ca8da3bb33718d604"
-  integrity sha512-JRELhS7HykfIIX55zmGnVMtansJdQ9NcYymbcaNvyYKPmiWfHgeR1Jsd0/0ipS+vJJvWjnIAU8BxnijPT8r82g==
+"@open-wa/wa-automate@^4.27.7":
+  version "4.27.7"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.27.7.tgz#408bb80845d36fa5ccf4174b428a10da9a94e10b"
+  integrity sha512-aKYAtAuBBm7VXjN8QYRBm4QODa+vnwxCouBAagr2DxZiXo7NeW/dSNVOuZfnb83ofRL7WcANikzdLjCOLUsrPw==
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.3.1"
@@ -181,6 +181,7 @@
     express "^4.17.1"
     express-robots-txt "^1.0.0"
     find-up "^5.0.0"
+    form-data "^4.0.0"
     fs-extra "^10.0.0"
     get-port "^5.1.1"
     hasha "^5.2.0"
@@ -2240,6 +2241,15 @@ form-data@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
   integrity sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"

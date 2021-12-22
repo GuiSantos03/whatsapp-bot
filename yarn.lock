@@ -3661,10 +3661,10 @@ marky@^1.2.0:
   resolved "https://registry.yarnpkg.com/marky/-/marky-1.2.2.tgz#4456765b4de307a13d263a69b0c79bf226e68323"
   integrity sha512-k1dB2HNeaNyORco8ulVEhctyEGkKHb2YWAhDsxeFlW2nROIirsctBYzKwwS3Vza+sKTS1zO4Z+n9/+9WbGLIxQ==
 
-mathjs@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-10.0.0.tgz#872e8e5c0d23a383760cb84e16542fad5093c6a5"
-  integrity sha512-PZcQ73mVvVG2GZXvE47q+j7P3ALVxWUM51wTmlVX3F/3IJMLNziNIqStwyIDAO64ZGB8u3iFlQwxT7DIijtNlw==
+mathjs@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-10.0.1.tgz#73356328bb3cccbb11816037c58628124f38fe67"
+  integrity sha512-PSkO4qpPCEXB7IQl3hj0N+2mZg+8ibX1uJi+u/T7Xb4ygGXMA0hpPrVoqBGBTk5i2S+f6cQEPsWLVPJFLLh2TQ==
   dependencies:
     "@babel/runtime" "^7.16.0"
     complex.js "^2.0.15"

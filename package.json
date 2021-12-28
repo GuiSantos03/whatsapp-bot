@@ -22,7 +22,7 @@
     "extends": "@zhycorp/eslint-config/node"
   },
   "dependencies": {
-    "@open-wa/wa-automate": "^4.27.4",
+    "@open-wa/wa-automate": "^4.28.0",
     "aws-sdk": "^2.1046.0",
     "@open-wa/wa-decrypt": "^4.3.1",
     "buffer-type": "^1.0.0",

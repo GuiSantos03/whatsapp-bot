@@ -165,10 +165,10 @@
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate-types-only/-/wa-automate-types-only-4.20.6.tgz#022debbfe5766d7682431c320bd27d154037b068"
   integrity sha512-gknxGzpoz+W7+u/PFWa2AF55zXe9HnaYrqsiT8QvEl3gjXBZ0eTfN8I+giVGVp+0wYRqu373z7jf2gmF24f28g==
 
-"@open-wa/wa-automate@^4.28.6":
-  version "4.28.6"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.28.6.tgz#0efa4e0d5100482a954318049287df46342298c3"
-  integrity sha512-gQseKGzdt+SxvP+187enOVLOznugeWtiglgVZP6WfqnCAxevHR0tZVmIgO2oi3L99hYQ478kvjeNZx1EfFWkBg==
+"@open-wa/wa-automate@^4.28.12":
+  version "4.28.12"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.28.12.tgz#2f32240fa13eafeacabe34beddb23db3c9a239ed"
+  integrity sha512-kBxm6n6xi6WR0AC41DVZsuF6YqT33GTyq9K1ouD8CGe0+z5iv8v3epw6B3v8pI8ysQ10JvaQduNrhRzX4B7FDw==
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.3.1"

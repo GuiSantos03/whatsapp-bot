@@ -680,10 +680,10 @@ awesome-ajv-errors@^1.0.1:
     leven "^3.1.0"
     terminal-link "^2.1.1"
 
-aws-sdk@^2.1052.0:
-  version "2.1052.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1052.0.tgz#ae51421884b1228a2e48588e6b2628036f35f090"
-  integrity sha512-GtCjW/1yzyJaTavcd22W8aptq2jVyGwXiJXPDLzyqTi0Q34EijSWYIlLk2C8dzIO7L1qnnVvva6u8XL+W0zwLw==
+aws-sdk@^2.1056.0:
+  version "2.1056.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1056.0.tgz#a1eb5039e3c780ce484f34ef2e0760cb8cccbf3e"
+  integrity sha512-ocpc4Sy9Lclt+v5bIRuvFq0WwJoLIU26ikdCQn+ke9lIDPC9+hGZbkFK7TiqTu3noEekgIubGHFGEkd/5V0HhQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"

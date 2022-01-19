@@ -649,15 +649,10 @@ assert-plus@1.0.0, assert-plus@^1.0.0:
   resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
   integrity sha1-8S4PPF13sLHN2RRpQuTpbB5N1SU=
 
-async@^3.1.0:
+async@^3.1.0, async@^3.2.0:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/async/-/async-3.2.2.tgz#2eb7671034bb2194d45d30e31e24ec7e7f9670cd"
   integrity sha512-H0E+qZaDEfx/FY4t7iLRv1W2fFI6+pyCeTw1uN20AQPiwqwM6ojPxHxdLv4z8hi2DtnW9BOckSspLucW7pIE5g==
-
-async@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
-  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -2871,10 +2866,10 @@ ibm-cloud-sdk-core@^2.14.3:
     semver "^6.2.0"
     tough-cookie "^4.0.0"
 
-ibm-watson@^6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.2.1.tgz#89b8c17bc276130311eb30edc45c5aae5dc00ca3"
-  integrity sha512-pFZVjAoX5C+2tmgt1XIYnXeSlj1PWWSYX6XLJbryLiddLmVSdBHkXFD+80g8UlLQibiRliygDeG6S5FMnZyIQw==
+ibm-watson@^6.2.2:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/ibm-watson/-/ibm-watson-6.2.2.tgz#a2a54f906ed45045d209f3896db2a30ac304827a"
+  integrity sha512-yeCs+ti4I87V2guFRf0oQWFgl7LF7jeHg724uTVOyHt96hL8SyllsAAF3TsXcv0V9rjLqqgW4DmnFp3P/63eEg==
   dependencies:
     "@types/async" "^3.2.5"
     "@types/extend" "^3.0.1"

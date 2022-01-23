@@ -165,10 +165,10 @@
   resolved "https://registry.yarnpkg.com/@open-wa/wa-automate-types-only/-/wa-automate-types-only-4.20.6.tgz#022debbfe5766d7682431c320bd27d154037b068"
   integrity sha512-gknxGzpoz+W7+u/PFWa2AF55zXe9HnaYrqsiT8QvEl3gjXBZ0eTfN8I+giVGVp+0wYRqu373z7jf2gmF24f28g==
 
-"@open-wa/wa-automate@^4.28.6":
-  version "4.28.6"
-  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.28.6.tgz#0efa4e0d5100482a954318049287df46342298c3"
-  integrity sha512-gQseKGzdt+SxvP+187enOVLOznugeWtiglgVZP6WfqnCAxevHR0tZVmIgO2oi3L99hYQ478kvjeNZx1EfFWkBg==
+"@open-wa/wa-automate@^4.29.0":
+  version "4.29.0"
+  resolved "https://registry.yarnpkg.com/@open-wa/wa-automate/-/wa-automate-4.29.0.tgz#4e3cda491668e0eee567a31c18b06ba5c8ba2910"
+  integrity sha512-cVJ/gQ82fxM0mxCqeV2zfvE93TKxz7n/6GyZzDVBDnp6tqELFAYS2V94F+q1BuESamtNtdLElZgx5Q8cD/B0mA==
   dependencies:
     "@discordjs/collection" "^0.2.0"
     "@open-wa/wa-decrypt" "^4.3.1"
@@ -227,9 +227,9 @@
     swagger-ui-express "^4.1.4"
     tcp-port-used "^1.0.1"
     terminal-link "^2.1.1"
+    terminate "^2.5.0"
     tiny-glob "^0.2.9"
     traverse "^0.6.6"
-    tree-kill "^1.2.2"
     ts-json-schema-generator "^0.95.0"
     ts-morph "^12.0.0"
     type-fest "^1.1.1"
@@ -1967,6 +1967,19 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+
+event-stream@=3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/event-stream/-/event-stream-3.3.4.tgz#4ab4c9a0f5a54db9338b4c34d86bfce8f4b35571"
+  integrity sha1-SrTJoPWlTbkzi0w02Gv86PSzVXE=
+  dependencies:
+    duplexer "~0.1.1"
+    from "~0"
+    map-stream "~0.1.0"
+    pause-stream "0.0.11"
+    split "0.3"
+    stream-combiner "~0.0.4"
+    through "~2.3.1"
 
 event-stream@~3.1.0:
   version "3.1.7"
@@ -4639,6 +4652,13 @@ proxy-from-env@1.1.0:
   resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
   integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
 
+ps-tree@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/ps-tree/-/ps-tree-1.2.0.tgz#5e7425b89508736cdd4f2224d028f7bb3f722ebd"
+  integrity sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==
+  dependencies:
+    event-stream "=3.3.4"
+
 psl@^1.1.28, psl@^1.1.33:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
@@ -5405,7 +5425,7 @@ split@0.2:
   dependencies:
     through "2"
 
-split@^0.3.0:
+split@0.3, split@^0.3.0:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/split/-/split-0.3.3.tgz#cd0eea5e63a211dfff7eb0f091c4133e2d0dd28f"
   integrity sha1-zQ7qXmOiEd//frDwkcQTPi0N0o8=
@@ -5699,6 +5719,13 @@ terminal-link@^2.1.1:
     ansi-escapes "^4.2.1"
     supports-hyperlinks "^2.0.0"
 
+terminate@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/terminate/-/terminate-2.5.0.tgz#c10f324ec1072f16fc6d028dd26ce7fe8f10bd26"
+  integrity sha512-WnhIjfoTiIvmrfey4GSkqJevEHbIFnSdKeutHwA+cm81/1+GlAHLw1pBKxsKqkrqMaQKK65V6WrvUa851phbgA==
+  dependencies:
+    ps-tree "^1.2.0"
+
 text-hex@1.0.x:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/text-hex/-/text-hex-1.0.0.tgz#69dc9c1b17446ee79a92bf5b884bb4b9127506f5"
@@ -5787,11 +5814,6 @@ traverse@^0.6.6:
   version "0.6.6"
   resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
   integrity sha1-y99WD9e5r2MlAv7UD5GMFX6pcTc=
-
-tree-kill@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
-  integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
 
 trim-newlines@^3.0.0:
   version "3.0.1"

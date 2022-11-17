@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@open-wa/wa-automate": "^4.28.6",
-    "aws-sdk": "^2.1052.0",
+    "aws-sdk": "^2.1257.0",
     "@open-wa/wa-decrypt": "^4.3.1",
     "buffer-type": "^1.0.0",
     "child_process": "^1.0.2",
